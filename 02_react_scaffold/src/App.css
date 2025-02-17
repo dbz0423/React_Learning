@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 容器样式 */
+.role-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 经验条样式 */
+.experience-bar {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: width 0.3s ease;
+}
+
+/* 按钮样式 */
+.experience-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.experience-button:hover {
+  background-color: #0056b3;
+}
+
+/* 升级消息样式 */
+.level-up-message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.congrats-message {
+  color: #ff5722;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stats-message {
+  color: #333;
+  font-size: 18px;
+}
+
+.highlight {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* 当前属性样式 */
+.current-stats {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.current-stats h2 {
+  color: #333;
+  font-size: 18px;
+}
