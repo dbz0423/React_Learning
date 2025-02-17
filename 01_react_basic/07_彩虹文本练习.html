@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07_彩虹文本练习</title>
+    <style>
+      .item {
+        color: indigo;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- CDN引入，依赖三个包：react、react-dom、babel -->
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const rainbowList = [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "purple",
+      ];
+      let count = 0;
+      let colorName = "black";
+      let random = -1;
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+      //2.监听按钮的点击
+      const btnClick = () => {
+        // 修改数据
+        count++;
+
+        random++;
+        if (random == 6) {
+          random = 0;
+        }
+        colorName = rainbowList[random];
+        // 重新渲染界面
+        rootRender();
+      };
+
+      const rootRender = () => {
+        root.render(
+          <div>
+            <h2 style={{ color: colorName }}>你已经点击了{count}次</h2>
+            <button onClick={btnClick}>点我变成彩虹色</button>
+
+            <h2>{count >= 10 ? "你触发了隐藏成就：彩虹大师！" : ""}</h2>
+          </div>
+        );
+      };
+      rootRender();
+    </script>
+  </body>
+</html>
