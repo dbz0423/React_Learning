@@ -1,0 +1,285 @@
+#root {
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.origin {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  padding: 8px 20px;
+}
+
+.active {
+  background-color: #7ad1eb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  padding: 8px 20px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-layout {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background: antiquewhite;
+}
+
+.profile-nav {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.profile-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.blog-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-list h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.blog-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list .blog-item {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list .blog-cover {
+  flex: 0 0 200px;
+  margin-right: 20px;
+}
+
+.blog-list .blog-cover img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.blog-list .blog-content {
+  flex: 1;
+}
+
+.blog-list .blog-content h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.blog-list .blog-content p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-list .blog-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #95a5a6;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 100%;
+}
+
+.blog-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-detail-cover {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-detail-cover img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-detail-title {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.blog-detail-meta {
+  display: flex;
+  justify-content: center;
+  color: #95a5a6;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.blog-detail-body {
+  line-height: 1.8;
+  color: #34495e;
+}
+
+.blog-detail-body p {
+  margin-bottom: 20px;
+}
+
+.blog-detail-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* 登录页面样式 */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  border-radius: 8px;
+  background-color: #ebf0f8;
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1890ff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  width: 20%;
+  align-content: center;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.error {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* 导航栏样式 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info button {
+  padding: 4px 8px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background-color: #40a9ff;
+}
