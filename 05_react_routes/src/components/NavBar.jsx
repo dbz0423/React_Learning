@@ -22,11 +22,6 @@ const NavBar = () => {
     navigate("/login");
   };
 
-  // 如果当前路径是登录页面，则不渲染导航栏
-  if (location.pathname === "/login") {
-    return null;
-  }
-
   return (
     <>
       <div className="navbar">
