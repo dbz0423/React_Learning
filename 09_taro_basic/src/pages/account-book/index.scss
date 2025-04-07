@@ -1,0 +1,27 @@
+.account-book-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--at-spacing-xl);
+
+  .page-title {
+    padding: 20px;
+    font-size: var(--at-font-size-xl);
+    color: var(--at-color-primary);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .form-section {
+    margin-bottom: 10px;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--at-spacing-md);
+  }
+
+  // 账单列表使用AtList组件自带样式
+  .records-section {
+    flex: 1;
+    overflow-y: auto;
+  }
+}

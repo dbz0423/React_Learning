@@ -1,0 +1,42 @@
+.preview-section {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+
+  .preview-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .card-preview {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .position {
+      color: #6c757d;
+      margin-bottom: 5px;
+    }
+
+    .company {
+      color: #495057;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      Text {
+        display: block;
+        color: #6c757d;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+}

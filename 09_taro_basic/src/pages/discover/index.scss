@@ -1,0 +1,79 @@
+.discover-container {
+  padding: 20px;
+
+  @mixin base-card {
+    margin: 20px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .card-description {
+      font-size: 26px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .discover-card,
+  .account-book-card,
+  .music-box-card {
+    @include base-card;
+
+    .card-title {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 12px;
+      color: #666;
+    }
+  }
+
+  .account-book-card {
+    background: #f0f9ff;
+  }
+
+  .music-box-card {
+    background: #f5f0ff;
+  }
+
+  .discover-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+    .card-title {
+      font-size: 32px;
+      color: #2d3436;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .card-description {
+      font-size: 26px;
+      color: #636e72;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.business-card {
+  padding: 20px;
+
+  .form-section {
+    margin-bottom: 30px;
+
+    .form-title {
+      color: #333;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+
+      Text {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+      }
+
+      Input {
+        border: 1px solid #ddd;
+        padding: 8px 10px;
+        border-radius: 4px;
+      }
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      background-color: #007bff;
+    }
+  }
+}
