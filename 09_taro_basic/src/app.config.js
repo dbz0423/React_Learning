@@ -1,4 +1,30 @@
 export default defineAppConfig({
+  permission: {
+    "scope.userLocation": {
+      desc: "你的位置信息将用于小程序位置接口的效果展示",
+    },
+    "scope.camera": {
+      desc: "需要访问你的摄像头以使用截图功能",
+    },
+    "scope.record": {
+      desc: "需要访问你的麦克风以使用截图功能",
+    },
+    "scope.writePhotosAlbum": {
+      desc: "需要访问你的相册以保存截图",
+    },
+    "scope.bluetooth": {
+      desc: "需要访问你的蓝牙以连接设备",
+    },
+  },
+  requiredPrivateInfos: [
+    "chooseAddress",
+    "chooseLocation",
+    "choosePoi",
+    "getLocation",
+    "onLocationChange",
+    "startLocationUpdate",
+    "startLocationUpdateBackground",
+  ],
   pages: [
     "pages/main/index",
     "pages/discover/index",
@@ -9,6 +35,23 @@ export default defineAppConfig({
     "pages/business-card/index",
     "pages/account-book/index",
     "pages/music-box/index",
+    "pages/component/index",
+    "pages/basic/index",
+    "pages/container/index",
+    "pages/form/index",
+    "pages/location/index",
+    "pages/map/index",
+    "pages/media/index",
+    "pages/skyline/index",
+    "pages/webView/index",
+    "pages/api/index",
+    "pages/contact/index",
+    "pages/device/index",
+    "pages/screen/index",
+    "pages/blue-teeth/index",
+    "pages/cut/index",
+    "pages/internet/index",
+    "pages/send-code/index",
   ],
   window: {
     backgroundTextStyle: "light",
@@ -33,6 +76,18 @@ export default defineAppConfig({
         text: "发现",
         iconPath: "./assets/tabs/discover.png",
         selectedIconPath: "./assets/tabs/discover-active.png",
+      },
+      {
+        pagePath: "pages/component/index",
+        text: "组件",
+        iconPath: "./assets/tabs/component.png",
+        selectedIconPath: "./assets/tabs/component-active.png",
+      },
+      {
+        pagePath: "pages/api/index",
+        text: "API",
+        iconPath: "./assets/tabs/api.png",
+        selectedIconPath: "./assets/tabs/api-active.png",
       },
       {
         pagePath: "pages/profile/index",
